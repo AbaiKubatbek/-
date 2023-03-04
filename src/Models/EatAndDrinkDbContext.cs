@@ -14,7 +14,7 @@ namespace EatAndDrink.Models
         // TODO: Нужно обновить строку подключения
         // Вместо <сервер> указываем имя сервера SQL Server Expres
         // Вместо <пароль> указываем пароль созданный при установке SQL Server Expres
-        private readonly String _connectionString = "Data Source=<сервер>;Initial Catalog=EatAndDrinkDB;Persist Security Info=True;User ID = sa;Password=<пароль>;";
+        private readonly String _connectionString = "Data Source=DESKTOP-FEQVEMS;Initial Catalog=EatAndDrinkDB1;Persist Security Info=True;User ID = SA;Password=0700415926a;";
         public DbSet<Person> Persons { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Courier> Couriers { get; set; }
