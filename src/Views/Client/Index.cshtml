@@ -1,5 +1,25 @@
 ﻿@{
     ViewData["Title"] = "Clients Page";
+        
 }
 
 <h1>Привет! Это страница Clients</h1>
+
+<table>
+        <tr>
+        <th>ID</th>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Phone number</th>
+        <th>Adress</th>
+        </tr>
+        @foreach (var item in Model){
+        <tr>    
+            <th>@item.Id</th>
+            <th>@item.FirstName</th>
+            <th>@item.LastName</th>
+            <th>@item.PhoneNumber</th>
+            <th>@item.Address</th>
+        </tr>   
+        }
+</table>   
